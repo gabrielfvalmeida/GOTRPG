@@ -8,6 +8,7 @@ import android.view.ViewGroup
 import com.gabriel.gotrpg.databinding.FragmentViewPagerBinding
 import com.gabriel.gotrpg.viewPager.screens.AttackFragment
 import com.gabriel.gotrpg.viewPager.screens.DefenseFragment
+import com.gabriel.gotrpg.viewPager.screens.TableFragment
 import com.google.android.material.tabs.TabLayout
 import com.google.android.material.tabs.TabLayoutMediator
 
@@ -23,7 +24,7 @@ class ViewPagerFragment : Fragment() {
         // Inflate the layout for this fragment
         binding = FragmentViewPagerBinding.inflate(layoutInflater)
 
-        val fragmentList = arrayListOf(AttackFragment(), DefenseFragment())
+        val fragmentList = arrayListOf(AttackFragment(), DefenseFragment(), TableFragment())
 
 
         val adapter = ViewPagerAdapter(requireActivity().supportFragmentManager, lifecycle,fragmentList)
@@ -34,6 +35,7 @@ class ViewPagerFragment : Fragment() {
             when(position){
                 0 -> tab.text = "Dano"
                 1 -> tab.text = "Defesa"
+                2 -> tab.text = "Tabelas"
             }
 
         }.attach()
