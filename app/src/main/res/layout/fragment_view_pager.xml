@@ -21,18 +21,7 @@
         android:layout_height="wrap_content"
         app:layout_constraintTop_toTopOf="parent"
         app:tabTextColor="@color/red"
-        app:tabIndicatorColor="@color/red_button">
-
-        <com.google.android.material.tabs.TabItem
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:text="Dano"            />
-        <com.google.android.material.tabs.TabItem
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:text="Defesa"/>
-
-    </com.google.android.material.tabs.TabLayout>
+        app:tabIndicatorColor="@color/red_button"/>
 
 
 

@@ -17,19 +17,11 @@ class SplashFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-
-
         Handler().postDelayed({findNavController().navigate(R.id.action_splashFragment_to_viewPagerFragment)},2000)
-
-
-
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.splash_screen, container, false)
     }
 
-    companion object {
-
-    }
 }
 
 

@@ -6,12 +6,17 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
+import androidx.viewpager2.widget.ViewPager2
+import com.gabriel.gotrpg.R
 import com.gabriel.gotrpg.databinding.FragmentDefenseBinding
+import com.google.android.material.tabs.TabLayout
+import com.google.android.material.tabs.TabLayoutMediator
 
 class DefenseFragment : Fragment(){
 
     private var _binding: FragmentDefenseBinding? = null
     private val binding get() = _binding!!
+
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -24,6 +29,8 @@ class DefenseFragment : Fragment(){
 
         return binding.root
     }
+
+
 
     private fun isValid(): Boolean{
         return !binding.editAgility.text.isNullOrEmpty() &&

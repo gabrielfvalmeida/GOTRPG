@@ -8,12 +8,16 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.CompoundButton
 import android.widget.Toast
+import androidx.viewpager2.widget.ViewPager2
 import com.gabriel.gotrpg.R
 import com.gabriel.gotrpg.databinding.FragmentAttackBinding
+import com.google.android.material.tabs.TabLayout
+import com.google.android.material.tabs.TabLayoutMediator
 
 class AttackFragment : Fragment(), View.OnClickListener, CompoundButton.OnCheckedChangeListener {
 
     private lateinit var binding: FragmentAttackBinding
+
 
 
     override fun onCreateView(
@@ -28,8 +32,11 @@ class AttackFragment : Fragment(), View.OnClickListener, CompoundButton.OnChecke
 
         binding.text1.text = "Luta"
 
+
+
         return binding.root
     }
+
 
     override fun onClick(v: View) {
         when (v.id) {
